@@ -1,0 +1,64 @@
+PUT COMMAND: (Insert Single record in the data base)
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml 
+{
+    "token": "90938040|-31949266040484532|90953436",
+    "cmd": "PUT",
+    "dbName": "Student",
+    "rel": "Student-Rel",
+    "jsonStr": {
+        "id": "1",
+        "name": "Vinisha",
+        "email": "vini@gmail.com",
+        "mobileno": "9967825671"  
+     }  
+}
+
+
+GET COMMAND: (Retrieve single record by jsondata)
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/irl
+{
+    "token": "90938040|-31949266040484532|90953436”,
+    "cmd": "GET",
+    "dbName": "Student",
+    "rel": "Stu-Rel",
+    "jsonStr":{
+        "name": "Vinisha"
+    }
+} 
+
+
+UPDATE COMMAND: (Update multiple records in the database)
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml 
+{
+    "token": "90938040|-31949266040484532|90953436",
+    "cmd": "UPDATE",
+    "dbName": "Student",
+    "rel": "Stu-Rel",
+    "jsonStr": {
+       "3":{
+        "name": "Vinisha Ramesh"
+      } 
+}  
+
+
+REMOVE COMMAND: (Remove records from the database)
+Http method : POST
+Base url : http://api.login2explore.com:5577
+End-point url : /api/iml 
+{
+    "token": "90938040|-31949266040484532|90953436",
+    "cmd": "REMOVE",
+    "dbName": "Student",
+    "rel": "Stu-Rel",
+    "record": 1,
+    "jsonStr" : {}
+}
+
+
+
